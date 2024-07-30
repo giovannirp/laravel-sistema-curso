@@ -29,6 +29,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="/events/create">Criar eventos</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/destaques">Destaque eventos</a>
+              </li>
             </ul>
           </div>
         </div>

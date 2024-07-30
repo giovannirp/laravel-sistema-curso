@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Models\Event;
+use App\Models\Destaques;
 
 class EventController extends Controller
 {
@@ -17,5 +18,10 @@ class EventController extends Controller
 
     public function create() {
         return view('events.create');
+    }
+
+    public function destaques() {
+        $destaques = Destaques::all();
+        return view('destaques', ['destaques' => $destaques]);
     }
 }
