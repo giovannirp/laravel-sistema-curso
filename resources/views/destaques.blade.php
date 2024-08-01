@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container mt-5">
   <h1>destaques</h1>
   @foreach($destaques as $destaque)
    <div class="card mb-4">

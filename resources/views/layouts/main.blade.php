@@ -15,28 +15,31 @@
 
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg bg-danger">
+      <nav class="navbar navbar-expand-lg fixed-top bg-danger">
         <div class="container">
-          <a class="navbar-brand" href="/">Cursos Eventos</a>
+          <a class="navbar-brand text-white fw-bold" href="/">Cursos Eventos</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link text-white" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/events/create">Criar eventos</a>
+                <a class="nav-link text-white" href="/events/create">Criar eventos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/destaques">Destaque eventos</a>
+                <a class="nav-link text-white" href="/destaques">Destaque eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info fw-bold" href="/destaques">Palestrantes</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-       <div class="container">
+       <div class="container mt-5">
           <div class="row">
 
             @yield('content')
