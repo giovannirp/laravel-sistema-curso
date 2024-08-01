@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Event;
 use App\Models\Destaques;
+use App\Models\Palestrantes;
 
 class EventController extends Controller
 {
@@ -22,5 +23,10 @@ class EventController extends Controller
     public function destaques() {
         $destaques = Destaques::all();
         return view('destaques', ['destaques' => $destaques]);
+    }
+
+    public function palestrantes() {
+        $palestrantes = Palestrantes::all();
+        return view('palestrantes', ['palestrantes' => $palestrantes]);
     }
 }

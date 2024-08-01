@@ -33,7 +33,7 @@
                 <a class="nav-link text-white" href="/destaques">Destaque eventos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-info fw-bold" href="/destaques">Palestrantes</a>
+                <a class="nav-link text-info fw-bold" href="/palestrantes">Palestrantes</a>
               </li>
             </ul>
           </div>

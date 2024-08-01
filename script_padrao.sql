@@ -5,3 +5,6 @@ INSERT INTO `destaques` (`id`, `created_at`, `updated_at`, `title`, `subtitle`, 
 
 -- Tabela de eventos
 INSERT INTO `events` (`id`, `created_at`, `updated_at`, `title`, `description`, `city`, `private`) VALUES (NULL, NULL, NULL, 'Curso de PHP', 'Lorem ipsum curso PHP', 'Coti-SP', ''), (NULL, NULL, NULL, 'HTML avançado', 'Curso, que irá mostrar HTML avançado!', 'Notificação nova de HTML avançado', '');
+
+-- Tabela palestrantes
+INSERT INTO `palestrantes` (`id`, `created_at`, `updated_at`, `nome`, `idade`, `formacao`) VALUES (NULL, NULL, NULL, 'Jose Rival', '46', 'Pós graduado na Fatec'), (NULL, NULL, NULL, 'Giovanni Ribeiro', '36', 'Especialização na Uninove em Sistema Web.');
