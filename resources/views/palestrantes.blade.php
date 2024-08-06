@@ -5,6 +5,7 @@
 @section('content')
 <div class="container row mt-4">
     <h1>Palestrantes</h1>
+    <a href="/events/palestrante" class="link-success text-decoration-none link-hover d-block mb-4">Cadastar participantes</a>
     @foreach($palestrantes as $palestrante)
     <div class="card col-md-3 me-4  mb-4">
       <img src="/img/foto-perfil.jpg" class="card-img-top w-100" />

@@ -20,6 +20,10 @@ class EventController extends Controller
         return view('events.create');
     }
 
+    public function createPalestrante() {
+        return view('events.palestrante');
+    }
+
     public function store(Request $request) {
         $event = new Event;
 
