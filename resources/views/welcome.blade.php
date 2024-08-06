@@ -14,10 +14,11 @@
   
     <div class="cards-container row mt-5">
         @foreach($events as $event)
-        <div class="card col-md-3 me-4">
-            <img src="/img/img-1.jpg" class="card-img-top" alt="...">
+        <div class="card col-md-3 me-4 mb-5">
+            <img src="/img/img-1.jpg" class="card-img-top" alt="{{ $event->title }}">
             <div class="card-body">
                 <h5 class="card-title">{{ $event->title }}</h5>
+                <h6 class="text-danger">{{ $event->city}}</h6>
                 <p class="card-text"> {{ $event->description }}</p>
                 <a href="#" class="btn btn-primary">Saber mais</a>
             </div>
