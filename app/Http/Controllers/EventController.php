@@ -37,6 +37,18 @@ class EventController extends Controller
         return redirect('/');
     }
 
+    public function palestrantCreate(Request $request) {
+        $eventPalestrants = new Palestrantes;
+
+        $eventPalestrants->nome = $request->nome;
+        $eventPalestrants->idade = $request->idade;
+        $eventPalestrants->formacao = $request->formacao;
+
+        $eventPalestrants->save();
+
+        return redirect('/palestrantes');
+    }
+
     public function destaques() {
         $destaques = Destaques::all();
         return view('destaques', ['destaques' => $destaques]);

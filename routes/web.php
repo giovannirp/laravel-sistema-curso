@@ -10,6 +10,7 @@ Route::get('/events/palestrante', [EventController::class, 'createPalestrante'])
 Route::get('/destaques', [EventController::class, 'destaques']);
 Route::get('/palestrantes', [EventController::class, 'palestrantes']);
 Route::post('/events', [EventController::class, 'store']);
+Route::post('/palestrant', [EventController::class, 'palestrantCreate']);
 
 
 Route::get('/contact', function () {
